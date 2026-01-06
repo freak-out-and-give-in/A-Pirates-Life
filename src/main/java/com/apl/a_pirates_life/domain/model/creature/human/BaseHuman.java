@@ -1,6 +1,5 @@
 package com.apl.a_pirates_life.domain.model.creature.human;
 
-import com.apl.a_pirates_life.domain.creature.*;
 import com.apl.a_pirates_life.domain.model.action.animalaction.AnimalActions;
 import com.apl.a_pirates_life.domain.model.action.humanaction.HumanActions;
 import com.apl.a_pirates_life.domain.model.creature.Body;
@@ -33,8 +32,8 @@ public class BaseHuman implements Human {
     }
 
     @Override
-    public boolean getAlive() {
-        return baseAnimal.getAlive();
+    public boolean isAlive() {
+        return baseAnimal.isAlive();
     }
 
     @Override

@@ -6,6 +6,7 @@ target/
 .log
 .gitattributes
 .mvnw
+logs
 
 ### STS ###
 .apt_generated

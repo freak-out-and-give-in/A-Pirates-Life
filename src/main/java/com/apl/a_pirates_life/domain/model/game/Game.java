@@ -1,6 +1,7 @@
 package com.apl.a_pirates_life.domain.model.game;
 
 import com.apl.a_pirates_life.domain.model.game.event.Events;
+import com.apl.a_pirates_life.domain.model.game.map.Map;
 import com.apl.a_pirates_life.domain.model.game.meteorology.Weather;
 import com.apl.a_pirates_life.domain.model.game.season.Seasons;
 import lombok.AllArgsConstructor;

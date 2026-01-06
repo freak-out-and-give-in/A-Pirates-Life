@@ -34,8 +34,8 @@ public class NPC implements Human {
     }
 
     @Override
-    public boolean getAlive() {
-        return baseHuman.getAlive();
+    public boolean isAlive() {
+        return baseHuman.isAlive();
     }
 
     @Override

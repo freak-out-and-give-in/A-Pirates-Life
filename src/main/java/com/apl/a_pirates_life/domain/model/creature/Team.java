@@ -1,6 +1,7 @@
 package com.apl.a_pirates_life.domain.model.creature;
 
 import com.apl.a_pirates_life.domain.model.creature.human.Human;
+import com.apl.a_pirates_life.domain.model.tile.tiles.ChartedTile;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
@@ -16,5 +17,5 @@ public class Team {
 
     private List<Human> humans;
 
-    private Location home;
+    private ChartedTile home;
 }

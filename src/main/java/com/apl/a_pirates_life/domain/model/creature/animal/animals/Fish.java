@@ -1,6 +1,5 @@
 package com.apl.a_pirates_life.domain.model.creature.animal.animals;
 
-import com.apl.a_pirates_life.domain.creature.*;
 import com.apl.a_pirates_life.domain.model.action.animalaction.AnimalActions;
 import com.apl.a_pirates_life.domain.model.creature.Body;
 import com.apl.a_pirates_life.domain.model.creature.Inventory;
@@ -29,8 +28,8 @@ public class Fish implements Animal {
     }
 
     @Override
-    public boolean getAlive() {
-        return baseAnimal.getAlive();
+    public boolean isAlive() {
+        return baseAnimal.isAlive();
     }
 
     @Override
