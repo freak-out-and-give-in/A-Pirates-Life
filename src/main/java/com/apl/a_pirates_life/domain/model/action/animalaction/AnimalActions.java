@@ -2,26 +2,26 @@ package com.apl.a_pirates_life.domain.model.action.animalaction;
 
 import com.apl.a_pirates_life.domain.model.action.Action;
 import com.apl.a_pirates_life.domain.model.action.animalaction.animalactions.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Getter
-@AllArgsConstructor
+@NoArgsConstructor
 public class AnimalActions implements Action {
 
-    private Move move;
+    private final Move move = new Move();
 
-    private Rest rest;
+    private final Rest rest = new Rest();
 
-    private Communicate communicate;
+    private final Communicate communicate = new Communicate();
 
-    private Search search;
+    private final Search search = new Search();
 
-    private Fight fight;
+    private final Fight fight = new Fight();
 
-    private InventoryInteraction inventoryInteraction;
+    private final InventoryInteraction inventoryInteraction = new InventoryInteraction();
 
-    private BodyInteraction bodyInteraction;
+    private final BodyInteraction bodyInteraction = new BodyInteraction();
 }

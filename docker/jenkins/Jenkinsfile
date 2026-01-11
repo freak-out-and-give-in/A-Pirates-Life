@@ -4,29 +4,34 @@ pipeline {
             label 'docker-agent'
             }
       }
+    tools {
+        maven 'Maven'
+    }
     stages {
         stage('Build') {
             steps {
-                echo "Building..."
-                sh '''
-                echo "doing build stuff..."
-                '''
+                echo "Building with Maven..."
+
+                sh "mvn clean package"
             }
         }
         stage('Test') {
             steps {
-                echo "Testing..."
-                sh '''
-                echo "doing test stuff..."
-                '''
+                echo "Running unit tests..."
+
+                sh 'mvn test'
+            }
+            post {
+                always {
+                    junit 'target/surefire-reports/*.xml'
+                }
             }
         }
         stage('Deliver') {
             steps {
-                echo "Deliver..."
-                sh '''
-                echo "doing delivery stuff..."
-                '''
+                echo "Delivering..."
+
+                sh './docker/jenkins/deliver.sh'
             }
         }
     }

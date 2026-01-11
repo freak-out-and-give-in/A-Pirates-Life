@@ -1,6 +1,6 @@
 package com.apl.a_pirates_life.domain.model.tile.tiles;
 
-import com.apl.a_pirates_life.domain.model.creature.Inventory;
+import com.apl.a_pirates_life.domain.model.general.inventory.WeightInventory;
 import com.apl.a_pirates_life.domain.model.tile.*;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -23,9 +23,9 @@ public class VisibleTile implements Tile {
 
     private Feature feature;
 
-    private Inventory animal;
+    private WeightInventory animal;
 
-    private Inventory item;
+    private WeightInventory item;
 
     private Effect effect;
 

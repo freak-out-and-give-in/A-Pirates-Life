@@ -4,24 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.List;
+
 @Slf4j
 @Getter
 @AllArgsConstructor
 public class Body {
 
-    private BodyPart head;
+    private List<BodyPart> bodyParts;
 
-    private BodyPart rightEye;
+    public void addGarment() {
+    }
 
-    private BodyPart leftEye;
-
-    private BodyPart torso;
-
-    private BodyPart rightArm;
-
-    private BodyPart leftArm;
-
-    private BodyPart rightLeg;
-
-    private BodyPart leftLeg;
 }

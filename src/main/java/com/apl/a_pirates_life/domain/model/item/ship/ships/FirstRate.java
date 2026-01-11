@@ -1,7 +1,7 @@
 package com.apl.a_pirates_life.domain.model.item.ship.ships;
 
-import com.apl.a_pirates_life.domain.model.creature.Inventory;
 import com.apl.a_pirates_life.domain.model.creature.animal.Animal;
+import com.apl.a_pirates_life.domain.model.general.inventory.WeightInventory;
 import com.apl.a_pirates_life.domain.model.item.ship.BaseShip;
 import com.apl.a_pirates_life.domain.model.item.ship.Ship;
 import lombok.AllArgsConstructor;
@@ -21,7 +21,7 @@ public class FirstRate implements Ship {
     }
 
     @Override
-    public Inventory getInventory() {
+    public WeightInventory getInventory() {
         return baseShip.getInventory();
     }
 

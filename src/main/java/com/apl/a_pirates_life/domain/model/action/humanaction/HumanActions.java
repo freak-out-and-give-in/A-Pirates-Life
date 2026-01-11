@@ -3,27 +3,27 @@ package com.apl.a_pirates_life.domain.model.action.humanaction;
 import com.apl.a_pirates_life.domain.model.action.Action;
 import com.apl.a_pirates_life.domain.model.action.animalaction.AnimalActions;
 import com.apl.a_pirates_life.domain.model.action.humanaction.humanactions.Exchange;
+import com.apl.a_pirates_life.domain.model.action.humanaction.humanactions.Fish;
 import com.apl.a_pirates_life.domain.model.action.humanaction.humanactions.Sail;
 import com.apl.a_pirates_life.domain.model.action.humanaction.humanactions.Work;
-import com.apl.a_pirates_life.domain.model.creature.animal.animals.Fish;
 import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Getter
-@AllArgsConstructor
+@NoArgsConstructor
 public class HumanActions implements Action {
 
     @Getter(AccessLevel.NONE)
-    private AnimalActions animalActions;
+    private final AnimalActions animalActions = new AnimalActions();
 
-    private Work work;
+    private final Work work = new Work();
 
-    private Sail sail;
+    private final Sail sail = new Sail();
 
-    private Exchange exchange;
+    private final Exchange exchange = new Exchange();
 
-    private Fish fish;
+    private final Fish fish = new Fish();
 }

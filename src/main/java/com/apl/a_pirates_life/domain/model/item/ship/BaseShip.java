@@ -1,7 +1,7 @@
 package com.apl.a_pirates_life.domain.model.item.ship;
 
-import com.apl.a_pirates_life.domain.model.creature.Inventory;
 import com.apl.a_pirates_life.domain.model.creature.animal.Animal;
+import com.apl.a_pirates_life.domain.model.general.inventory.WeightInventory;
 import com.apl.a_pirates_life.domain.model.item.BaseItem;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -20,7 +20,7 @@ public class BaseShip implements Ship {
 
     private Animal owner;
 
-    private Inventory inventory;
+    private WeightInventory inventory;
 
     private List<Animal> animals;
 

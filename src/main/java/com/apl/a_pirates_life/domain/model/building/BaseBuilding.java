@@ -1,7 +1,7 @@
 package com.apl.a_pirates_life.domain.model.building;
 
-import com.apl.a_pirates_life.domain.model.creature.Inventory;
 import com.apl.a_pirates_life.domain.model.creature.animal.Animal;
+import com.apl.a_pirates_life.domain.model.general.inventory.Inventory;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;

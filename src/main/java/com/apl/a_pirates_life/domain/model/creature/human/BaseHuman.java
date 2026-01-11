@@ -3,10 +3,10 @@ package com.apl.a_pirates_life.domain.model.creature.human;
 import com.apl.a_pirates_life.domain.model.action.animalaction.AnimalActions;
 import com.apl.a_pirates_life.domain.model.action.humanaction.HumanActions;
 import com.apl.a_pirates_life.domain.model.creature.Body;
-import com.apl.a_pirates_life.domain.model.creature.Inventory;
 import com.apl.a_pirates_life.domain.model.creature.Species;
 import com.apl.a_pirates_life.domain.model.creature.Team;
 import com.apl.a_pirates_life.domain.model.creature.animal.BaseAnimal;
+import com.apl.a_pirates_life.domain.model.general.inventory.Inventory;
 import com.apl.a_pirates_life.domain.model.tile.tiles.ChartedTile;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,7 +19,7 @@ public class BaseHuman implements Human {
     private BaseAnimal baseAnimal;
 
     @Getter
-    private HumanActions humanActions;
+    private final HumanActions humanActions = new HumanActions();
 
     @Override
     public String getName() {

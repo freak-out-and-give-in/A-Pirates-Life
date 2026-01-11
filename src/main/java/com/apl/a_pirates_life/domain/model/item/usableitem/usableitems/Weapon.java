@@ -4,12 +4,14 @@ import com.apl.a_pirates_life.domain.model.item.usableitem.BaseUsableItem;
 import com.apl.a_pirates_life.domain.model.item.usableitem.UsableItem;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Getter
 @AllArgsConstructor
+@Builder
 public class Weapon implements UsableItem {
 
     @Getter(AccessLevel.NONE)
